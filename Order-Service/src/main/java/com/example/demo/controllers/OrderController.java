@@ -34,7 +34,7 @@ public class OrderController {
 
     @PutMapping("/{id}")
     public Order updateOrder(@PathVariable Long id, @RequestBody Order product) {
-        return orderService.updateOrder(id, product);
+        return orderService.updateOrder(product);
     }
 
     @DeleteMapping("/{id}")

@@ -21,11 +21,11 @@ public class OrderService {
     private static final Logger LOGGER = Logger.getLogger(OrderService.class.getName());
 
     private final OrderRepository orderRepository;
-    private final KafkaTemplate<String, String> kafkaTemplate;
+    private KafkaTemplate<String, String> kafkaTemplate = null;
     private CompletableFuture<String> future;
 
     @Autowired
-    public OrderService(OrderRepository orderRepository, KafkaTemplate<String, String> kafkaTemplate) {
+    public OrderService(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
         this.kafkaTemplate = kafkaTemplate;
         this.future = new CompletableFuture<>();
@@ -97,7 +97,8 @@ public class OrderService {
         }
     }
 
-    public Order updateOrder(Long id, Order order) {
+    public Order updateOrder(Order order) {
+        Long id = 0L;
         Order existingOrder = getOrderById(id);
         existingOrder.setOrderDate(order.getOrderDate());
         existingOrder.setOrderStatus(order.getOrderStatus());
@@ -121,9 +122,10 @@ public class OrderService {
     }
 
     @KafkaListener(topics = "product-details-response", groupId = "group-3")
-    public void receiveProductDetailsResponse(String json) {
+    public String receiveProductDetailsResponse(String json) {
         future.complete(json);
         //logs startup messages, configuration details, or other significant events
         LOGGER.info("Received product details response: " + json);
+        return json;
     }
 }
