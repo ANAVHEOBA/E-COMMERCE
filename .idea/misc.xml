@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/APIGatewayApp" />
-    <file type="web" url="file://$PROJECT_DIR$/ConfigServerApplication" />
-    <file type="web" url="file://$PROJECT_DIR$/Order-Service" />
-    <file type="web" url="file://$PROJECT_DIR$/Product-service" />
-    <file type="web" url="file://$PROJECT_DIR$/Product-service" />
+    <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file://$PROJECT_DIR$/ProductService" />
-    <file type="web" url="file://$PROJECT_DIR$/UserAuth-Service" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
