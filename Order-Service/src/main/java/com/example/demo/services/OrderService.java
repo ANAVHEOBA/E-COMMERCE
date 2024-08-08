@@ -30,6 +30,7 @@ public class OrderService {
         this.kafkaTemplate = kafkaTemplate;
         this.future = new CompletableFuture<>();
     }
+    
 
     /**
      * Retrieves all orders and includes product details from Kafka.
