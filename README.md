@@ -172,7 +172,7 @@ kubectl apply -f k8s/
 
 # Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+The project is currently under development, and more features will be added over time.
 
 # License
 
