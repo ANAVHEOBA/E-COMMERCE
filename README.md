@@ -14,7 +14,8 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 # Microservices
 
 # 1. Product Catalog Service
-## Description: Manages product details, including categories, prices, inventory, and descriptions.
+## Description: 
+   Manages product details, including categories, prices, inventory, and descriptions.
 
 ## Endpoints:
 
@@ -55,7 +56,8 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 12 Admin Processes: Use Spring Boot Actuator for monitoring.
 
 # 2. Order Management Service
-## Description: Handles the creation, updating, and tracking of orders.
+## Description:
+  Handles the creation, updating, and tracking of orders.
 
 ## Endpoints:
 
@@ -69,7 +71,8 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 ## 12-Factor Practices: Similar to the Product Catalog Service
 
 # 3. User Authentication Service
-Description: Manages user registration, login, and authentication.
+## Description: 
+   Manages user registration, login, and authentication.
 
 ## Endpoints:
 
