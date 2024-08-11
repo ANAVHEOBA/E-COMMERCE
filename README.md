@@ -125,16 +125,17 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 4 Kubernetes (optional for orchestration)
 
 # Installation
-1 Clone the repository:
+## 1 Clone the repository:
 
 git clone https://github.com/Mithun1508/e-commerce.git
 
 cd ecommerce-platform-poc
 
-2 Build the project:
+## 2 Build the project:
+
 mvn clean install
 
-3 Run the services:
+## 3 Run the services:
 
 java -jar product-catalog-service/target/product-catalog-service.jar
 
@@ -162,6 +163,7 @@ docker run -d -p 8081:8081 order-management-service
 docker run -d -p 8082:8082 user-authentication-service
 
 ## Kubernetes
+
 To deploy the services using Kubernetes:
 
 1 Apply Kubernetes manifests:
