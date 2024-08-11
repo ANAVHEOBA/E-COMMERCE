@@ -127,9 +127,9 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 # Installation
 ## Clone the repository:
 
-git clone https://github.com/Mithun1508/e-commerce.git
+1 git clone https://github.com/Mithun1508/e-commerce.git
 
-cd ecommerce-platform-poc
+2 cd ecommerce-platform-poc
 
 ## Build the project:
 
