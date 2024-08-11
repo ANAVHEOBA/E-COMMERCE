@@ -1,8 +1,8 @@
-## E-commerce Platform POC
-## Overview
+# E-commerce Platform POC
+# Overview
 This project is a Proof of Concept (POC) for an E-commerce platform built using a microservices architecture. The platform is designed to manage product catalogs, handle orders, and authenticate users. It leverages a robust tech stack including Java, Spring Boot, Spring Data JPA, and PostgreSQL.
 
-## Tech Stack
+# Tech Stack
 1 Java
 
 2 Spring Boot
@@ -11,12 +11,12 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 
 4 PostgreSQL
 
-## Microservices
+# Microservices
 
-## 1. Product Catalog Service
-# Description: Manages product details, including categories, prices, inventory, and descriptions.
+# 1. Product Catalog Service
+## Description: Manages product details, including categories, prices, inventory, and descriptions.
 
-# Endpoints:
+## Endpoints:
 
 1 GET /products - List all products
 
@@ -28,7 +28,7 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 
 5 DELETE /products/{id} - Delete a product
 
-# 12-Factor Practices:
+## 12-Factor Practices:
 
 1 Codebase: A single codebase tracked in version control, many deploys.
 
@@ -54,10 +54,10 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 
 12 Admin Processes: Use Spring Boot Actuator for monitoring.
 
-## 2. Order Management Service
-# Description: Handles the creation, updating, and tracking of orders.
+# 2. Order Management Service
+## Description: Handles the creation, updating, and tracking of orders.
 
-# Endpoints:
+## Endpoints:
 
 1 POST /orders - Create a new order
 
@@ -66,18 +66,18 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 3 PUT /orders/{id} - Update an order
 
 4 DELETE /orders/{id} - Cancel an order
-# 12-Factor Practices: Similar to the Product Catalog Service
+## 12-Factor Practices: Similar to the Product Catalog Service
 
-## 3. User Authentication Service
+# 3. User Authentication Service
 Description: Manages user registration, login, and authentication.
 
-# Endpoints:
+## Endpoints:
 
 POST /auth/register - Register a new user
 POST /auth/login - User login
 GET /auth/user - Get authenticated user details
 
-# Tech Stack:
+## Tech Stack:
 
 1 Java
 
@@ -87,7 +87,7 @@ GET /auth/user - Get authenticated user details
 
 4 JWT
 
-# 12-Factor Practices:
+## 12-Factor Practices:
 
 1 Config: Manage sensitive information securely (e.g., secrets, tokens).
 
@@ -95,7 +95,7 @@ GET /auth/user - Get authenticated user details
 
 3 Isolation: Isolate sensitive operations and data.
 
-# General Best Practices
+## General Best Practices
 1 Service Discovery:  Use Spring Cloud Netflix Eureka or Consul.
 
 2 API Gateway: Use Spring Cloud Gateway for routing and filtering.
@@ -108,9 +108,9 @@ GET /auth/user - Get authenticated user details
 
 6 Monitoring: Use Prometheus and Grafana for monitoring and alerting.
 
-# Getting Started
+## Getting Started
 
-# Prerequisites
+## Prerequisites
 Java 11 or higher
 Maven or Gradle
 Docker
@@ -129,7 +129,7 @@ java -jar product-catalog-service/target/product-catalog-service.jar
 java -jar order-management-service/target/order-management-service.jar
 java -jar user-authentication-service/target/user-authentication-service.jar
 
-# Docker
+## Docker
 To run the services using Docker:
 
 1 Build Docker images:
@@ -142,7 +142,7 @@ docker run -d -p 8080:8080 product-catalog-service
 docker run -d -p 8081:8081 order-management-service
 docker run -d -p 8082:8082 user-authentication-service
 
-# Kubernetes
+## Kubernetes
 To deploy the services using Kubernetes:
 
 1 Apply Kubernetes manifests:
