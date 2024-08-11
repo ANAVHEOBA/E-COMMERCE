@@ -145,7 +145,7 @@ java -jar user-authentication-service/target/user-authentication-service.jar
 ## Docker
 To run the services using Docker:
 
-1 Build Docker images:
+## 1 Build Docker images:
 
 docker build -t product-catalog-service ./product-catalog-service
 
@@ -153,7 +153,8 @@ docker build -t order-management-service ./order-management-service
 
 docker build -t user-authentication-service ./user-authentication-service
 
-2 Run Docker containers:
+## 2 Run Docker containers:
+
 docker run -d -p 8080:8080 product-catalog-service
 
 docker run -d -p 8081:8081 order-management-service
