@@ -125,17 +125,17 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 4 Kubernetes (optional for orchestration)
 
 # Installation
-## 1 Clone the repository:
+## Clone the repository:
 
 git clone https://github.com/Mithun1508/e-commerce.git
 
 cd ecommerce-platform-poc
 
-## 2 Build the project:
+## Build the project:
 
 mvn clean install
 
-## 3 Run the services:
+## Run the services:
 
 java -jar product-catalog-service/target/product-catalog-service.jar
 
@@ -146,7 +146,7 @@ java -jar user-authentication-service/target/user-authentication-service.jar
 ## Docker
 To run the services using Docker:
 
-## 1 Build Docker images:
+## Build Docker images:
 
 docker build -t product-catalog-service ./product-catalog-service
 
@@ -154,7 +154,7 @@ docker build -t order-management-service ./order-management-service
 
 docker build -t user-authentication-service ./user-authentication-service
 
-## 2 Run Docker containers:
+## Run Docker containers:
 
 docker run -d -p 8080:8080 product-catalog-service
 
@@ -166,11 +166,14 @@ docker run -d -p 8082:8082 user-authentication-service
 
 To deploy the services using Kubernetes:
 
-1 Apply Kubernetes manifests:
+ Apply Kubernetes manifests:
+ 
 kubectl apply -f k8s/
 
 # Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request.
 
 # License
+
 This project is licensed under the MIT License.
