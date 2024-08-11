@@ -76,9 +76,11 @@ This project is a Proof of Concept (POC) for an E-commerce platform built using 
 
 ## Endpoints:
 
-POST /auth/register - Register a new user
-POST /auth/login - User login
-GET /auth/user - Get authenticated user details
+1 POST /auth/register - Register a new user
+
+2 POST /auth/login - User login
+
+3 GET /auth/user - Get authenticated user details
 
 ## Tech Stack:
 
@@ -114,35 +116,48 @@ GET /auth/user - Get authenticated user details
 ## Getting Started
 
 ## Prerequisites
-Java 11 or higher
-Maven or Gradle
-Docker
-Kubernetes (optional for orchestration)
+1 Java 11 or higher
+
+2 Maven or Gradle
+
+3 Docker
+
+4 Kubernetes (optional for orchestration)
 
 # Installation
 1 Clone the repository:
+
 git clone https://github.com/Mithun1508/e-commerce.git
+
 cd ecommerce-platform-poc
 
 2 Build the project:
 mvn clean install
 
 3 Run the services:
+
 java -jar product-catalog-service/target/product-catalog-service.jar
+
 java -jar order-management-service/target/order-management-service.jar
+
 java -jar user-authentication-service/target/user-authentication-service.jar
 
 ## Docker
 To run the services using Docker:
 
 1 Build Docker images:
+
 docker build -t product-catalog-service ./product-catalog-service
+
 docker build -t order-management-service ./order-management-service
+
 docker build -t user-authentication-service ./user-authentication-service
 
 2 Run Docker containers:
 docker run -d -p 8080:8080 product-catalog-service
+
 docker run -d -p 8081:8081 order-management-service
+
 docker run -d -p 8082:8082 user-authentication-service
 
 ## Kubernetes
